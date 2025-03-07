@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+    <defs>
+      <!-- 渐变定义 -->
+      <radialGradient id="sun-gradient">
+        <stop offset="0%" stop-color="#ffd700"/>
+        <stop offset="100%" stop-color="#ff8c00"/>
+      </radialGradient>
+      
+      <!-- 自定义图标 -->
+      <g id="tree">
+        <path d="M0 -20 Q5 -25 10 -20 Q15 -30 20 -20 Q25 -35 30 -20 L0 20" fill="#2d5a27"/>
+      </g>
+    </defs>
+  
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f5f5dc"/>
+  
+    <!-- ========== 外环：12个月时间轴 ========== -->
+    <g transform="translate(300,300)">
+      <circle r="250" fill="none" stroke="#999" stroke-width="1"/>
+  
+      <!-- 12个月份区块 -->
+      <g font-size="14" text-anchor="middle">
+        <!-- 春季 -->
+        <g transform="rotate(-60)"> <!-- 3月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#e6f3d7"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#fff">🌸 3月</text>
+        </g>
+        <g transform="rotate(-30)"> <!-- 4月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#d4e8c4"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#2d5a27">🌱 4月</text>
+        </g>
+        <g transform="rotate(0)"> <!-- 5月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#c3ddb4"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#2d5a27">🌧️ 5月</text>
+        </g>
+  
+        <!-- 夏季 -->
+        <g transform="rotate(30)"> <!-- 6月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#fff3b0"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#b8860b">🌞 6月</text>
+        </g>
+        <g transform="rotate(60)"> <!-- 7月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#ffe082"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#b8860b">🌻 7月</text>
+        </g>
+        <g transform="rotate(90)"> <!-- 8月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#ffd54f"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#b8860b">🍉 8月</text>
+        </g>
+  
+        <!-- 秋季 -->
+        <g transform="rotate(120)"> <!-- 9月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#ffcc80"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#8b4513">🍂 9月</text>
+        </g>
+        <g transform="rotate(150)"> <!-- 10月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#ffb74d"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#8b4513">🌾 10月</text>
+        </g>
+        <g transform="rotate(180)"> <!-- 11月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#ffa726"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#8b4513">🎑 11月</text>
+        </g>
+  
+        <!-- 冬季 -->
+        <g transform="rotate(210)"> <!-- 12月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#e3f2fd"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#1e88e5">❄️ 12月</text>
+        </g>
+        <g transform="rotate(240)"> <!-- 1月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#bbdefb"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#1e88e5">⛄ 1月</text>
+        </g>
+        <g transform="rotate(270)"> <!-- 2月 -->
+          <path d="M0,0 L0,-250 A250,250 0 0,1 125,-216.5 L0,0" fill="#90caf9"/>
+          <text transform="rotate(-15) translate(0,-220)" fill="#1e88e5">🏮 2月</text>
+        </g>
+      </g>
+    </g>
+  
+    <!-- ========== 内环：四大成果象限 ========== -->
+    <g transform="translate(300,300)">
+      <!-- 经济 -->
+      <g transform="rotate(-45)">
+        <path d="M0,0 L0,-180 A180,180 0 0,1 127.3,-127.3 L0,0" fill="#ffd700" opacity="0.8"/>
+        <text x="60" y="-100" font-size="16" fill="darkgreen">💰 +15% 产值</text>
+        <text x="60" y="-80" font-size="12" fill="darkgreen">电商销售额 500万</text>
+        <image x="40" y="-140" href="https://img.icons8.com/ios/50/package--v1.png" width="30" height="30"/>
+      </g>
+  
+      <!-- 生态 -->
+      <g transform="rotate(45)">
+        <path d="M0,0 L0,-180 A180,180 0 0,1 127.3,-127.3 L0,0" fill="#87c38f" opacity="0.8"/>
+        <use x="50" y="-120" href="#tree" transform="scale(1.2)"/>
+        <text x="60" y="-80" font-size="16" fill="#2d5a27">🌳 5000棵树</text>
+        <text x="60" y="-60" font-size="12" fill="#2d5a27">水质提升30%</text>
+      </g>
+  
+      <!-- 文化 -->
+      <g transform="rotate(135)">
+        <path d="M0,0 L0,-180 A180,180 0 0,1 127.3,-127.3 L0,0" fill="#ff6666" opacity="0.8"/>
+        <text x="-100" y="-80" font-size="16" fill="#8b0000">🏯 10座古建</text>
+        <text x="-100" y="-60" font-size="12" fill="#8b0000">文化活动20场</text>
+        <path d="M-120 -100 Q-110 -110 -100 -100 L-90 -90 Q-100 -80 -110 -90" fill="#8b0000"/>
+      </g>
+  
+      <!-- 民生 -->
+      <g transform="rotate(-135)">
+        <path d="M0,0 L0,-180 A180,180 0 0,1 127.3,-127.3 L0,0" fill="#6495ed" opacity="0.8"/>
+        <text x="-100" y="-80" font-size="16" fill="#00008b">🏥 5个卫生所</text>
+        <text x="-100" y="-60" font-size="12" fill="#00008b">网络覆盖率95%</text>
+        <path d="M-120 -120 l20 0 l-10 -20" fill="none" stroke="#00008b" stroke-width="2"/>
+      </g>
+    </g>
+  
+    <!-- ========== 中心图案 ========== -->
+    <g transform="translate(300,300)">
+      <!-- 太阳 -->
+      <circle r="40" fill="url(#sun-gradient)"/>
+      <text y="8" font-size="18" fill="white" text-anchor="middle">乡村振兴</text>
+    </g>
+  
+    <!-- 连接线 -->
+    <g stroke="#999" stroke-width="1" stroke-dasharray="4 4">
+      <circle cx="300" cy="300" r="200" fill="none"/>
+      <circle cx="300" cy="300" r="180" fill="none"/>
+    </g>
+  </svg>
